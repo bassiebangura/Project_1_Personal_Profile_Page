@@ -134,7 +134,7 @@ footer {
   min-height: 30px;
   padding: 20px 0 40px 20px;
   margin-bottom: 0;
-  background-color: hsl(242, 51%, 50%);
+  background-color: hsl(242, 51%, 70%, 0.8);
 }
 
 footer .copyright {
