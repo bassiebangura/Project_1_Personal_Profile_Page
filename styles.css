@@ -25,7 +25,7 @@ a:hover {
 
 .main-nav {
   width: 100%;
-  background: black;
+  background: hsl(242, 51%, 50%, 0.2);
   min-height: 30px;
   padding: 10px;
   position: fixed;
@@ -39,6 +39,15 @@ a:hover {
   margin: 0 auto;
   padding: 0;
 }
+/***** shows active page user is on  ***/ 
+.home a {
+  color: white;
+}
+#experience a {
+  color: white;
+}
+/***** /shows active page  *****/
+
 
 .nav .name {
     display: block;
@@ -55,9 +64,9 @@ a:hover {
   color: white
 }
 
-header {
+.header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url('images/winstonsalem.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -69,24 +78,24 @@ header .profile-image {
   margin-top: 50px;
   width: 150px;
   height: 150px;
-  border-radius: 50%;
-  border: 3px solid white;
+  border-radius: 25% 5% 25% 5%;
+  border: 3px solid hsl(36, 48%, 55%);
   transition: all .5s;
 }
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
 }
 .tag {
-  background-color: #efefef;
-  color: black;
+  background-color: rgba(22, 20, 153);
+  color: hsl(242, 100%, 100%);
   padding: 10px;
   border-radius: 5px;
   display: table;
   margin: 10px auto;
 } 
 .location {
-  background-color: #222;
-  color: yellow;
+  background-color:rgba(23, 23, 27, 0.5);;
+  color: hsl(64, 85%, 55%);
 }
 .card {
   margin: 30px;
@@ -124,6 +133,8 @@ footer {
   width: 100%;
   min-height: 30px;
   padding: 20px 0 40px 20px;
+  margin-bottom: 0;
+  background-color: hsl(242, 51%, 50%);
 }
 
 footer .copyright {
@@ -201,6 +212,7 @@ a.social:hover {
     font-size: 1.3em;
     max-width: 1200px;
     margin: 40px auto;
+    margin-bottom: 0;
   }
 
 }
