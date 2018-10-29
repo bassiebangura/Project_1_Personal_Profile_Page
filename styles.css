@@ -25,11 +25,12 @@ a:hover {
 
 .main-nav {
   width: 100%;
-  background: hsl(242, 51%, 50%, 0.2);
+  background: hsl(242, 51%, 50%, 0.4);
   min-height: 30px;
-  padding: 10px;
+  padding: 0.6rem;
   position: fixed;
   text-align: center;
+  border-bottom: 0.2rem solid hsl(242, 51%, 60%);
 }
 .nav {
   display: flex;
@@ -37,7 +38,7 @@ a:hover {
   font-weight: 700;
   list-style-type: none;
   margin: 0 auto;
-  padding: 0;
+  padding: 0.2rem;;
 }
 /***** shows active page user is on  ***/ 
 .home a {
@@ -70,10 +71,88 @@ a:hover {
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
+  border-bottom: 0.1rem solid #999;
 }
-header {
+.header {
   line-height: 1.5;
 }
+/*****************************************
+ --Start-- Experience page specific styling 
+ ******************************************/
+
+.header-experience {
+  padding-top: 76px;
+}
+
+figure {
+  padding: 0.4rem;
+  width: 100%;
+}
+
+figcaption {
+  margin-top: 0.4rem;
+}
+
+.bts_wrapper {
+  background-color: #999;
+  border-radius: 0.4rem;
+  border: 1px solid #999;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 98%;
+  margin: auto;
+}
+
+.main-content__section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border-bottom: 3px solid hsl(242, 51%, 70%, 0.3);
+  border-radius: 8px;
+  margin: 0.5rem auto 5px ;
+}
+
+.main-content__section p {
+  padding: 1.2rem;
+}
+.main-content__section__2 {
+  margin-top: 2rem;
+}
+
+.main-content__section h2 {
+  width: 100%;
+  text-align: center;
+  background-color: hsl(242, 51%, 70%);
+  border-radius: 5px;
+  padding: 0.4rem;
+  margin: 0.8rem auto 0.5rem;
+}
+
+.main-content__h2 {
+  width: 100%
+ }
+
+
+.main-content__section img{
+  width: 100%;
+  height: auto;
+}
+.main-content__section figure {
+  width: 100%;
+}
+
+
+
+/*******************************************
+ --End-- Experience page specific styling 
+ *******************************************/
+
+
 header .profile-image {
   margin-top: 50px;
   width: 150px;
@@ -85,6 +164,9 @@ header .profile-image {
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
 }
+.name {
+  font-family: "Orbitron", sans-serif;
+}
 .tag {
   background-color: rgba(22, 20, 153);
   color: hsl(242, 100%, 100%);
@@ -92,15 +174,16 @@ header .profile-image:hover {
   border-radius: 5px;
   display: table;
   margin: 10px auto;
+  font-size: 1.1rem;
 } 
 .location {
   background-color:rgba(23, 23, 27, 0.5);;
   color: hsl(64, 85%, 55%);
 }
 .card {
-  margin: 30px;
+  margin: 30px auto 30px;
   padding: 20px 40px 40px;
-  max-width: 500px;
+  max-width: 90%;
   text-align: left;
   background: #fff;
   border-bottom: 4px solid #ccc;
@@ -111,6 +194,9 @@ header .profile-image:hover {
   border-color: #ff99ff;
 }
 
+.nested {
+  padding: 1rem;
+}
 ul.skills {
   padding: 0;
   text-align: center;
@@ -132,9 +218,10 @@ ul.skills {
 footer {
   width: 100%;
   min-height: 30px;
-  padding: 20px 0 40px 20px;
+  padding: 10px;
   margin-bottom: 0;
   background-color: hsl(242, 51%, 70%, 0.8);
+  border-top: 0.2rem solid hsl(242, 51%, 60%)
 }
 
 footer .copyright {
@@ -190,30 +277,56 @@ a.social:hover {
       margin: 0 auto;
   }
 
-  header {
+  .header {
     min-height: 470px;
   }
 
-  .nav {
+  body {
     max-width: 1200px;
-    padding: 0 30px;
+    margin: auto;
   }
 
+  .main-nav {
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: auto;
+  }
+  
 
   main {
     padding-top: 20px;
+  }
+  .main-content {
+    padding-top: 0%;
   }
 
   main p {
     line-height: 1.6em;
   }
 
+  .card {
+    max-width: 48%;
+  }
+
   footer {
     font-size: 1.3em;
     max-width: 1200px;
-    margin: 40px auto;
+    margin: 40px auto 0 auto;
     margin-bottom: 0;
   }
+
+  .main-content__section h2 {
+    width: 50%;
+  }
+  .main-content__section figure {
+    width: 30%;
+    margin-right: 0;
+  }
+  .main-content__section__p {
+    width: 60%;
+    text-align: justify;
+  }
+  
 
 }
 
