@@ -15,7 +15,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #999;
+  color: #444;
 }
 a:hover {
   color: #6633ff;
@@ -90,7 +90,7 @@ header .profile-image:hover {
   border: 3px solid white;
   transform: scale(1.2);
 }
-.name {
+.name, .header-experience h1 {
   font-family: "Orbitron", sans-serif;
 }
 .tag {
@@ -194,11 +194,21 @@ a.social:hover {
 /*****************************************
  --Start-- Experience page specific styling 
  ******************************************/
-
-.header-experience {
-  padding-top: 76px;
+ .header-experience {
+  text-align: center;
+  background: url('images/winston_daytime.jpg') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+  border-bottom: 0.1rem solid #999;
+  min-height: 300px;
+  max-height: 350px;
 }
 
+.header-experience h1 {
+  margin-top: 140px;
+  font-size: 1.7rem;
+}
 figure {
   padding: 0.4rem;
   width: 100%;
@@ -281,8 +291,9 @@ figcaption {
       margin: 0 auto;
   }
 
-  .header {
-    min-height: 470px;
+  .header, .header-experience {
+    min-height: 400px;
+    max-height: 415px;
   }
 
   body {
