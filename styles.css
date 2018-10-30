@@ -25,7 +25,7 @@ a:hover {
 
 .main-nav {
   width: 100%;
-  background: hsl(242, 51%, 50%, 0.4);
+  background: hsla(242, 51%, 50%, 0.4);
   min-height: 30px;
   padding: 0.6rem;
   position: fixed;
@@ -99,6 +99,7 @@ figcaption {
   border: 1px solid #999;
 }
 
+
 .main-content {
   display: flex;
   flex-direction: row;
@@ -112,7 +113,7 @@ figcaption {
   flex-direction: row;
   flex-wrap: wrap;
   background-color: #fff;
-  border-bottom: 3px solid hsl(242, 51%, 70%, 0.3);
+  border-bottom: 3px solid hsla(242, 51%, 70%, 0.3);
   border-radius: 8px;
   margin: 0.5rem auto 5px ;
 }
@@ -159,16 +160,18 @@ header .profile-image {
   height: 150px;
   border-radius: 25% 5% 25% 5%;
   border: 3px solid hsl(36, 48%, 55%);
-  transition: all .5s;
+  transition: all .6s ease-in;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  border-radius: 50%;
+  border: 3px solid white;
+  transform: scale(1.2);
 }
 .name {
   font-family: "Orbitron", sans-serif;
 }
 .tag {
-  background-color: rgba(22, 20, 153);
+  background-color: rgb(22, 20, 153);
   color: hsl(242, 100%, 100%);
   padding: 10px;
   border-radius: 5px;
@@ -220,7 +223,7 @@ footer {
   min-height: 30px;
   padding: 10px;
   margin-bottom: 0;
-  background-color: hsl(242, 51%, 70%, 0.8);
+  background-color: hsla(242, 51%, 70%, 0.8);
   border-top: 0.2rem solid hsl(242, 51%, 60%)
 }
 
